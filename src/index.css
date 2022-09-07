@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  --bg-clr: hsl(227, 11%, 15%);
+  --card-bg-clr: hsl(231, 12%, 12%);
+  --email-bg-clr: hsl(0, 0%, 100%);
+  --linkdin-bg-clr: hsl(212, 72%, 60%);
+  --social-icon-clr: hsla(254, 6%, 58%, 1);
+  --footer-bg-clr: hsl(231, 7%, 9%);
+  --clr-white-100: hsla(0, 0%, 100%, 1);
+  --clr-white-96: hsla(0, 0%, 96%, 1);
+  --clr-white-86: hsla(0, 0%, 86%, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-clr);
+  display: grid;
+  place-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  background-color: var(--card-bg-clr);
+  width: fit-content;
+  width: 20rem;
+  margin-block: 3rem;
+  border-radius: .5rem;
+  overflow: hidden;
+
+  /* height: 50rem; */
+  /* margin-block: auto;
+  margin: auto;
+  height: fit-content; */
+  /* border: 1px solid red; */
+
+}
+
+.content {
+  padding-inline: 2rem;
+}
+
+.headline,
+.footer {
+  text-align: center;
+}
+
+.headline {
+  padding-block: 1.5rem 1rem;
+}
+
+.headline>*+* {
+  padding: .2rem;
+}
+
+.headline h2 {
+  color: var(--clr-white-100);
+  letter-spacing: .1em;
+}
+
+.headline h4 {
+  color: hsla(25, 79%, 78%, 1);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: .1em;
+
+}
+
+.headline small {
+  font-size: 13px;
+}
+
+.headline small,
+.about-me h3 {
+  color: var(--clr-white-96);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  margin-top: 1rem;
+}
+
+
+
+.email img {
+  height: 1.1rem;
+}
+
+.email,
+.linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  gap: .5rem;
+  font-size: 14px;
+  width: 115px;
+  height: 34px;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+
+.email {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: .5rem;
+}
+
+.linkedin {
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: var(--clr-white-100);
+}
+
+.about-me {
+  margin-block-start: 2rem;
+  margin-block-end: 3rem;
+}
+
+.about {
+  padding-bottom: 1.75rem;
+}
+
+.about-me h3 {
+  padding-bottom: .3rem;
+}
+
+.about-me p {
+  color: var(--clr-white-86);
+  font-size: 13px;
+  line-height: 1rem;
+}
+
+.footer {
+  background-color: var(--footer-bg-clr);
+}
+
+.footer,
+.footer a {
+  padding: 1rem;
+  /* border: 2px solid red; */
+}
